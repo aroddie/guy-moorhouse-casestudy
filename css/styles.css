@@ -23,7 +23,7 @@ html {
 body {
     font-family: var(--font-sans-serif);
     line-height: 1.667em;
-    font-size: large;
+    font-size: 20px;
 }
 
 /***********
@@ -43,7 +43,7 @@ Components
 }
 
 .component__code h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 300;
     line-height: 1.1em;
     color: var(--white);
@@ -51,7 +51,7 @@ Components
 
 .component__code h2 {
     font-weight: 300;
-    font-size: 2.667rem;
+    font-size: 3rem;
     color: var(--white)
 }
 
