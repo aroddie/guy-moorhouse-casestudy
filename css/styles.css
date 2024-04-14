@@ -116,13 +116,13 @@ Components
     overflow: hidden;
 }
 
-.component__code img {
+.img-container img {
     max-width: 100%;
     margin: auto;
     transition: 0.2s;
 }
 
-.component__code img:hover {
+.img-container img:hover {
     transform: scale(1.05);
 }
 /*icons*/
@@ -134,5 +134,23 @@ i.fa-brands {
 .fa-threads:hover {
     color: var(--purple);
     transform: scale(1.08);
+}
+
+/*Navbar*/
+
+.navbar {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__logo {
+    max-width: 100px;
+    height: 100%;
+}
+
+.main-nav ul{
+    list-style-type: none;
+    display: flex;
 }
 
