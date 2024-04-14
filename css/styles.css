@@ -24,7 +24,7 @@ html {
 body {
     font-family: var(--font-sans-serif);
     line-height: 1.667em;
-    font-size: 20px;
+    font-size: large;
 }
 
 /***********
@@ -56,6 +56,15 @@ Components
     color: var(--white)
 }
 
+/*Other text*/
+.info-highlight {
+    display: inline;
+    font-size: 0.9em;
+    padding: 10px 15px 5px;
+    background-color: var(--grey);
+    border-radius: 50px;
+}
+
 /*Buttons and Links*/
 .button a {
     text-decoration: none;
@@ -80,6 +89,25 @@ Components
 
 .footer a:hover {
     color: var(--peach);
+}
+
+/*image and Video*/
+.img-container {
+    display: inline-block;
+    width: 554px;
+    height: 554px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.component__code img {
+    max-width: 100%;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.component__code img:hover {
+    transform: scale(1.05);
 }
 
 
