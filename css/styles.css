@@ -65,7 +65,8 @@ Components
 /*Other text*/
 .info-highlight {
     display: inline;
-    font-size: 0.9em;
+    font-size: 1rem;
+    color: var(--off-white);
     padding: 10px 15px 5px;
     background-color: var(--grey);
     border-radius: 50px;
@@ -167,7 +168,6 @@ i.fa-brands {
 }
 
 .contracts__table tr {
-    font-size: 1.2em;
     border-bottom: 1px solid var(--grey);
 }
 
@@ -176,6 +176,7 @@ i.fa-brands {
 }
 
 .contracts__table td {
+    font-size: 1.2em;
     padding: 0.8em 0;
 }
 
