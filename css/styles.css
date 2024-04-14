@@ -30,6 +30,7 @@ body {
 a {
     color: var(--white);
     text-decoration: none;
+    transition: 0.2s;
 }
 
 /***********
@@ -78,7 +79,6 @@ Components
     border: 1px solid var(--white);
     border-radius: 50px;
     padding: 10px 15px 5px;
-    transition: 0.2s;
 }
 .button a:hover {
     background-color: var(--white);
@@ -89,7 +89,6 @@ Components
     text-decoration: underline;
     color: var(--light-grey);
     font-size: 0.9em;
-    transition: 0.2s;
 }
 
 .footer a:hover {
@@ -101,7 +100,6 @@ Components
     text-decoration: none;
     padding: 10px 15px 5px;
     border-radius: 50px;
-    transition: 0.2s;
 }
 .main-nav__item--active a, .main-nav__item a:hover {
     background-color: var(--grey);
@@ -139,7 +137,7 @@ i.fa-brands {
 /*Navbar*/
 
 .navbar {
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -152,5 +150,54 @@ i.fa-brands {
 .main-nav ul{
     list-style-type: none;
     display: flex;
+}
+
+/*Recent Contracts*/
+
+.contracts__table {
+    width: 92%;
+    margin: auto;
+    border-collapse: collapse;
+    color: var(--white);
+}
+
+.contracts__caption {
+    text-align: left;
+    color: var(--off-white);
+}
+
+.contracts__table tr {
+    font-size: 1.2em;
+    border-bottom: 1px solid var(--grey);
+}
+
+.contracts__table tr:last-of-type {
+    border-bottom: none;
+}
+
+.contracts__table td {
+    padding: 0.8em 0;
+}
+
+.contracts a {
+    color: var(--white);
+    transition: 0.2s;
+}
+
+.contracts__link--adept:hover {
+    color: var(--peach);
+}
+
+.contracts__link--google:hover {
+    color: var(--light-blue);
+}
+
+.contracts__link--fable:hover {
+    color: var(--yellow);
+}
+
+.contracts__dates {
+    color: var(--off-white);
+    text-align: right;
 }
 
