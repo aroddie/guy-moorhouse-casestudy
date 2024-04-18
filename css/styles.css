@@ -6,8 +6,10 @@
     --grey: #383838;
     --dark-grey: #232323;
     --black: #1a1a1a;
+    --blue: #407adf;
     --light-blue: #07d1ff;
     --purple: #8c6af6;
+    --dark-purple: #6966A9;
     --pink: #f199a4;
     --yellow: #f6c858;
     --peach: #f2a996;
@@ -58,9 +60,16 @@ Components
 }
 
 .component__code h2 {
+    margin-bottom: 15px;
     font-weight: 300;
     font-size: 3rem;
     color: var(--white)
+}
+
+.component__code h3 {
+    font-weight: 300;
+    font-size: 2.1rem;
+    color: var(--white);
 }
 
 /*Other text*/
@@ -115,6 +124,12 @@ Components
     border-radius: 5px;
     overflow: hidden;
 }
+.img-container--blue {
+    background-color: var(--blue);
+}
+.img-container--purple {
+    background-color: var(--dark-purple);
+}
 
 .img-container img {
     max-width: 100%;
@@ -135,6 +150,10 @@ i.fa-brands {
     color: var(--purple);
     transform: scale(1.08);
 }
+
+/********************
+Molecules & Organisms
+*********************/
 
 /*Navbar*/
 
@@ -203,3 +222,19 @@ i.fa-brands {
     text-align: right;
 }
 
+/*Selected projects*/
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    grid-gap: 40px;
+}
+
+.project h3 {
+    margin: 15px 0 10px;
+}
+.project p {
+    margin: 0;
+}
+.project {
+    margin-bottom: 40px;
+}
