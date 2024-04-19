@@ -39,6 +39,7 @@ a {
 .content-wrapper {
     max-width: 95%;
     margin: auto;
+    position: relative;
 }
 
 /***********
@@ -60,6 +61,14 @@ Components
 .footer__copy {
     color: var(--light-grey);
     font-size: 0.9em;
+    margin: 40px 0;
+}
+
+.footer__img {
+    position: absolute;
+    width: 64px;
+    right: 0;
+    bottom: 0;
 }
 /*headers*/
 .component__code h2 {
@@ -110,6 +119,9 @@ Components
     text-decoration: underline;
     color: var(--light-grey);
 }
+.footer__link--link-row {
+    padding-right: 10px;
+}
 
 .footer__link:hover {
     color: var(--white);
@@ -156,12 +168,32 @@ Components
 /*icons*/
 i.fa-brands {
     font-size: 1.5em;
+    padding: 10px;
+    color: var(--white);
     transition: 0.2s;
 }
+.fa-brands:hover {
+    transform: scale(1.08);
+}
 
+/*hover colors*/
 .fa-threads:hover {
     color: var(--purple);
-    transform: scale(1.08);
+}
+.link-hover--peach:hover, .fa-instagram:hover {
+    color: var(--peach);
+}
+.link-hover--yellow:hover, .fa-mastodon:hover {
+    color: var(--yellow);
+}
+.fa-linkedin:hover {
+    color: var(--light-blue);
+}
+.link-hover--green:hover {
+    color: var(--green);
+}
+.link-hover--pink:hover {
+    color: var(--pink);
 }
 
 /********************
