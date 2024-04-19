@@ -35,6 +35,11 @@ a {
     text-decoration: none;
     transition: 0.2s;
 }
+/*Wrapper*/
+.content-wrapper {
+    max-width: 95%;
+    margin: auto;
+}
 
 /***********
 Components
@@ -166,8 +171,6 @@ Molecules & Organisms
 /*Navbar*/
 
 .navbar {
-    max-width: 95%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -184,8 +187,7 @@ Molecules & Organisms
 /*Recent Contracts*/
 
 .contracts__table {
-    width: 92%;
-    margin: auto;
+    width: 100%;
     border-collapse: collapse;
     color: var(--white);
 }
@@ -236,7 +238,9 @@ Molecules & Organisms
     grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
     grid-gap: 40px;
 }
-
+.img-container--grid {
+    max-width: 100%;
+}
 .project h3 {
     margin: 15px 0 10px;
 }
