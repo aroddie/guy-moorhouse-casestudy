@@ -83,7 +83,13 @@ Components
     font-size: 2.1rem;
     color: var(--white);
 }
-.component__code h1, .infoblock h2 {
+.component__code h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.1em;
+}
+.infoblock h2 {
     font-size: 4.2rem;
     font-weight: 300;
     line-height: 1.1em;
@@ -216,6 +222,33 @@ Molecules & Organisms
     display: flex;
 }
 
+/*Hero*/
+.hero {
+    min-height: 1000px;
+}
+.hero__img--left {
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+}
+.hero__img--middle {
+    position: absolute;
+    bottom: 100px;
+    left: 525px;
+}
+.hero__img--right {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: 1;
+}
+.hero__img--far-right {
+    position: absolute;
+    right: -100px;
+    top:100px;
+    overflow: hidden;
+}
+
 /*Recent Contracts*/
 
 .contracts__table {
@@ -284,6 +317,6 @@ Molecules & Organisms
 }
 
 /*infoblock*/
-.infoblock {
+.infoblock, .hero__title {
     max-width: 800px;
 }
