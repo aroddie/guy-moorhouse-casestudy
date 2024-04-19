@@ -51,6 +51,11 @@ Components
     color: var(--off-white);
     padding: 5px;
 }
+
+.footer__copy {
+    color: var(--light-grey);
+    font-size: 0.9em;
+}
 /*headers*/
 .component__code h2 {
     margin: 15px 0;
@@ -99,10 +104,13 @@ Components
 .footer__link {
     text-decoration: underline;
     color: var(--light-grey);
-    font-size: 0.9em;
 }
 
 .footer__link:hover {
+    color: var(--white);
+}
+
+.link-hover--peach:hover {
     color: var(--peach);
 }
 
