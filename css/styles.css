@@ -55,7 +55,8 @@ Components
 .component__code {
     background-color: var(--dark-grey);
     color: var(--off-white);
-    padding: 5px;
+    padding: 10px 0;
+    margin: 5px 0;
 }
 
 .footer__copy {
@@ -206,6 +207,48 @@ i.fa-brands {
 Molecules & Organisms
 *********************/
 
+/*Availability Floater*/
+.availability-floater{
+    background-color: var(--white);
+    border-radius: 100px;
+    margin: 20px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 3px 3px 16px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+}
+/*The shadow obviously doesn't show up against the dark background here, but I wanted to include it so I'd have it ready for the actual page when this has a fixed position*/
+
+.availability-floater:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.availability-floater p {
+    margin: 0;
+    padding-top: 8px;
+    color: var(--black);
+}
+.availability-floater img {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--off-white);
+    border-radius: 100px;
+    margin: 0;
+}
+
+@keyframes blink {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.availability-floater__light {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: var(--green);
+    animation: blink 1s ease-in-out infinite;
+}
+
 /*Navbar*/
 
 .navbar {
@@ -225,16 +268,11 @@ Molecules & Organisms
 /*Hero*/
 .hero {
     background-image: linear-gradient(var(--dark-grey), var(--black));
+    overflow: hidden;
 }
 .hero__images{
     min-height: 800px;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
 }
-/* .hero__img--far-right {
-    grid-column-end: -1;
-
-} */
 
 .hero__img--left {
     width: 33%;
@@ -261,7 +299,6 @@ Molecules & Organisms
     right: -100px;
     bottom: 35%;
 }
-
 
 /*Recent Contracts*/
 
