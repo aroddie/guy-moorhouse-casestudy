@@ -224,30 +224,44 @@ Molecules & Organisms
 
 /*Hero*/
 .hero {
-    min-height: 1000px;
+    background-image: linear-gradient(var(--dark-grey), var(--black));
 }
+.hero__images{
+    min-height: 800px;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+}
+/* .hero__img--far-right {
+    grid-column-end: -1;
+
+} */
+
 .hero__img--left {
+    width: 33%;
     position: absolute;
     left: -100px;
     bottom: 0;
 }
 .hero__img--middle {
+    width: 33%;
     position: absolute;
     bottom: 100px;
-    left: 525px;
+    left: 30%;
 }
 .hero__img--right {
+    width: 33%;
     position: absolute;
     bottom: 0;
-    right: 50px;
+    left: 66%;
     z-index: 1;
 }
 .hero__img--far-right {
+    width: 33%;
     position: absolute;
     right: -100px;
-    top:100px;
-    overflow: hidden;
+    bottom: 35%;
 }
+
 
 /*Recent Contracts*/
 
