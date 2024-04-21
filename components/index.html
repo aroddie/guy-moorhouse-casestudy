@@ -10,298 +10,331 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-        <h1>Web Components</h1>
+        <header class="sidebar">
+            <nav class="sidebar__navigation">
+                <ul>
+                    <li><a href="#typography">Typography Defaults</a>
+                        <ul>
+                            <li><a href="#body-copy">Body and footer copy</a></li>
+                            <li><a href="#headings">Headings</a></li>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#links">Footer Links</a></li>
+                            <li><a href="#info-highlight">Info Highlights</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#atoms">Atoms</a>
+                        <ul>
+                            <li><a href="#menu-item--active">Active Menu Item</a></li>
+                            <li><a href="#menu-item">Inactive Menu Item</a></li>
+                            <li><a href="#images">Images</a></li>
+                            <li><a href="#icons">Social Media Icons</a></li>
+                            <li><a href="#availability-floater">Availability Floater</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#nav-bar">Navigation Bar</a></li>
+                    <li><a href="#hero">Hero</a></li>
+                    <li><a href="#contracts">Recent Contracts</a></li>
+                    <li><a href="#projects">Selected Projects</a></li>
+                    <li><a href="#infoblock">Info Block</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Web Design System Study</h1>
+            <p>A collection of components from my study of <a href="https://www.futurefabric.co/" class="link--body">Guy Moorhouse's portfolio</a> website.</p>
 
-        <h2>Typography Defaults</h2>
-        <article class="component">
-            <h3 class="component__name">Body copy, eyebrows, subtitles, and footer copy</h3>
-            <div class="component__img">
-                <img src="img/infoblock__text.png" alt="body copy">
-                <img src="img/infoblock__eyebrow.png" alt="A text eyebrow">
-                <img src="img/project__description.png" alt="subtitle content">
-                <img src="img/footer__copyright.png" alt="footer copy">
-            </div>
-            <div class="component__code">
-                <p>Hey I'm Guy. I design and build for the web and related technologies, typically consulting with organisations that are at the beginning of something new — a period of invention where a new product or service needs to be realised and communicated online.</p>
-                <p>What I do</p>
-                <p>In-flight entertainment system</p>
-                <div class="footer__copy">
-                    <p>© Futurefabric Ltd. and clients, 2008&ndash;2024<br>
-                    Registered in the UK and Wales. Company 06759081. VAT 326240627.<br>
-                    Website hand coded with <a href="#!" class="footer__link">Astro</a>.</p>
+            <h2 id="typography">Typography Defaults</h2>
+            <article class="component" id="body-copy">
+                <h3 class="component__name">Body copy, eyebrows, subtitles, and footer copy</h3>
+                <div class="component__img">
+                    <img src="img/infoblock__text.png" alt="body copy">
+                    <img src="img/infoblock__eyebrow.png" alt="A text eyebrow">
+                    <img src="img/project__description.png" alt="subtitle content">
+                    <img src="img/footer__copyright.png" alt="footer copy">
                 </div>
-            </div>
-        </article>
-        <article class="component">
-            <h3 class="component__name">Headings (h1, h2, h3)</h3>
-            <div class="component__img">
-                <img src="img/hero__title.png" alt="h1 content">
-                <img src="img/portfolio__title.png" alt="h2 content">
-                <img src="img/project__title.png" alt="h3 content">
-            </div>
-            <div class="component__code">
-                <h1>Guy Moorhouse is an independent designer</h1>
-                <h2>Selected projects</h2>
-                <h3>Virgin Atlantic</h3>
-            </div>
-        </article>
-        <article class="component">
-            <h3 class="component__name">Buttons</h3>
-            <div class="component__img">
-                <img src="img/button.png" alt="Footer Link">
-                <img src="img/button--hover.png" alt="Footer Link on hover">
-            </div>
-            <div class="component__code">
-                <p><a href="#!" class="button">About my studio</a></p>
-            </div>
-        </article>
-        <article class="component">
-            <h3 class="component__name">Footer Links</h3>
-            <div class="component__img">
-                <img src="img/footer__nav--link.png" alt="Footer Link">
-                <img src="img/footer__nav--link--hover.png" alt="Footer Link on hover">
-            </div>
-            <div class="component__code footer__copy">
-                <p><a href="#!" class="footer__link link-hover--peach">Newsletter</a></p>
-            </div>
-        </article>
-        <article class="component">
-            <h3 class="component__name">Info highlights</h3>
-            <div class="component__img">
-                <img src="img/info-highlight.png" alt="Highlighted information">
-            </div>
-            <div class="component__code">
-                <p class="info-highlight">+More projects added soon</p>
-            </div>
-        </article>
-
-        <h2>Atoms</h2>
-        <article class="component">
-            <h3 class="component__name">Active Menu Item</h3>
-            <div class="component__img">
-                <img src="img/main-nav__item--active.png" alt="An active menu item">
-            </div>
-            <div class="component__code main-nav__item main-nav__item--active">
-                <p><a href="#!">Projects</a></p>
-            </div>
-        </article>
-        <article class="component">
-            <h3 class="component__name">Inctive Menu Item</h3>
-            <div class="component__img">
-                <img src="img/main-nav__item.png" alt="An inactive menu item">
-            </div>
-            <div class="component__code main-nav__item">
-                <p><a href="#!">About</a></p>
-            </div>
-        </article>
-        <article class="component">
-            <h3 class="component__name">Images</h3>
-            <div class="component__img">
-                <img src="img/project__img.png" alt="A styled image">
-            </div>
-            <div class="component__code">
-                <div class="img-container">
-                    <img src="https://www.futurefabric.co/_astro/virgin-thumb.u7OhDyeX_vBVBF.webp" alt="image from Guy Moorhouse Website">
+                <div class="component__code">
+                    <p>Hey I'm Guy. I design and build for the web and related technologies, typically consulting with organisations that are at the beginning of something new — a period of invention where a new product or service needs to be realised and communicated online.</p>
+                    <p>What I do</p>
+                    <p>In-flight entertainment system</p>
+                    <div class="footer__copy">
+                        <p>© Futurefabric Ltd. and clients, 2008&ndash;2024<br>
+                        Registered in the UK and Wales. Company 06759081. VAT 326240627.<br>
+                        Website hand coded with <a href="#!" class="footer__link">Astro</a>.</p>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article class="component">
-            <h3 class="component__name">Social Media Icons</h3>
-            <div class="component__img">
-                <img src="img/footer__social-media--threads.png" alt="A footer Social Media icon">
-                <img src="img/footer__social-media--threads--hover.png" alt="A footer Social Media icon on hover">
-            </div>
-            <div class="component__code">
-                <a href="#!"><i class="fa-brands fa-threads"></i></a>
-            </div>
-        </article>
-        <article class="component">
-            <h3 class="component__name">Avalability Floater</h3>
-            <div class="component__img">
-                <img src="img/availability-floater.png" alt="A floating element declaring Guy Moorhouse's availability">
-            </div>
-            <div class="component__code">
-                <a href="#!" class="availability-floater">
-                    <div class="availability-floater__light"></div>
-                    <p>Available soon</p>
-                    <img src="../images/blue-mascot-logo.svg" alt="blue mascot logo">
-                </a>
-            </div>
-        </article>
-
-        <h2>Navigation bar</h2>
-        <article class="component">
-            <h3 class="component__name">.navbar</h3>
-            <div class="component__img">
-                <img src="img/navbar.png" alt="The navigation bar">
-            </div>
-            <div class="component__code">
-                <div class="content-wrapper">
-                    <header class="navbar">
-                        <!--In the original site, SVGs are directly embedded. I've converted them to images here so as to avoid copying and pasting the code into my project-->
-                        <img src="../images/gm-signature.svg" class="navbar__logo">
-                        <nav class="main-nav">
-                            <ul>
-                                <li class="main-nav__item main-nav__item--active"><a href="#!">Projects</a></li>
-                                <li class="main-nav__item"><a href="#!">About</a></li>
-                                <li class="main-nav__item"><a href="#!">Blog</a></li>
-                                <li class="main-nav__item"><a href="#!">Contact</a></li>
-                                <li class="main-nav__item"><a href="#!">Now</a></li>
-                            </ul>
-                        </nav>
-                    </header>
+            </article>
+            <article class="component" id="headings">
+                <h3 class="component__name">Headings (h1, h2, h3)</h3>
+                <div class="component__img">
+                    <img src="img/hero__title.png" alt="h1 content">
+                    <img src="img/portfolio__title.png" alt="h2 content">
+                    <img src="img/project__title.png" alt="h3 content">
                 </div>
-            </div>
-        </article>
+                <div class="component__code">
+                    <h1>Guy Moorhouse is an independent designer</h1>
+                    <h2>Selected projects</h2>
+                    <h3>Virgin Atlantic</h3>
+                </div>
+            </article>
+            <article class="component" id="buttons">
+                <h3 class="component__name">Buttons</h3>
+                <div class="component__img">
+                    <img src="img/button.png" alt="Footer Link">
+                    <img src="img/button--hover.png" alt="Footer Link on hover">
+                </div>
+                <div class="component__code">
+                    <p><a href="#!" class="button">About my studio</a></p>
+                </div>
+            </article>
+            <article class="component" id="links">
+                <h3 class="component__name">Footer Links</h3>
+                <div class="component__img">
+                    <img src="img/footer__nav--link.png" alt="Footer Link">
+                    <img src="img/footer__nav--link--hover.png" alt="Footer Link on hover">
+                </div>
+                <div class="component__code footer__copy">
+                    <p><a href="#!" class="footer__link link-hover--peach">Newsletter</a></p>
+                </div>
+            </article>
+            <article class="component" id="info-highlight">
+                <h3 class="component__name">Info highlights</h3>
+                <div class="component__img">
+                    <img src="img/info-highlight.png" alt="Highlighted information">
+                </div>
+                <div class="component__code">
+                    <p class="info-highlight">+More projects added soon</p>
+                </div>
+            </article>
 
-        <h2>Hero Section</h2>
-        <article class="component">
-            <h3 class="component__name">.hero</h3>
-            <div class="component__img">
-                <img src="img/hero.png" alt="The hero section">
-            </div>
-            <div class="component__code">
-                <section class="hero">
+            <h2 id="atoms">Atoms</h2>
+            <article class="component" id="menu-item--active">
+                <h3 class="component__name">Active Menu Item</h3>
+                <div class="component__img">
+                    <img src="img/main-nav__item--active.png" alt="An active menu item">
+                </div>
+                <div class="component__code main-nav__item main-nav__item--active">
+                    <p><a href="#!">Projects</a></p>
+                </div>
+            </article>
+            <article class="component" id="menu-item">
+                <h3 class="component__name">Inctive Menu Item</h3>
+                <div class="component__img">
+                    <img src="img/main-nav__item.png" alt="An inactive menu item">
+                </div>
+                <div class="component__code main-nav__item">
+                    <p><a href="#!">About</a></p>
+                </div>
+            </article>
+            <article class="component" id="images">
+                <h3 class="component__name">Images</h3>
+                <div class="component__img">
+                    <img src="img/project__img.png" alt="A styled image">
+                </div>
+                <div class="component__code">
+                    <div class="img-container">
+                        <img src="https://www.futurefabric.co/_astro/virgin-thumb.u7OhDyeX_vBVBF.webp" alt="image from Guy Moorhouse Website">
+                    </div>
+                </div>
+            </article>
+            <article class="component" id="icons">
+                <h3 class="component__name">Social Media Icons</h3>
+                <div class="component__img">
+                    <img src="img/footer__social-media--threads.png" alt="A footer Social Media icon">
+                    <img src="img/footer__social-media--threads--hover.png" alt="A footer Social Media icon on hover">
+                </div>
+                <div class="component__code">
+                    <a href="#!"><i class="fa-brands fa-threads"></i></a>
+                </div>
+            </article>
+            <article class="component" id="availability-floater">
+                <h3 class="component__name">Avalability Floater</h3>
+                <div class="component__img">
+                    <img src="img/availability-floater.png" alt="A floating element declaring Guy Moorhouse's availability">
+                </div>
+                <div class="component__code">
+                    <a href="#!" class="availability-floater">
+                        <div class="availability-floater__light"></div>
+                        <p>Available soon</p>
+                        <img src="../images/blue-mascot-logo.svg" alt="blue mascot logo">
+                    </a>
+                </div>
+            </article>
+
+            <h2 id="nav-bar">Navigation bar</h2>
+            <article class="component">
+                <h3 class="component__name">.navbar</h3>
+                <div class="component__img">
+                    <img src="img/navbar.png" alt="The navigation bar">
+                </div>
+                <div class="component__code">
                     <div class="content-wrapper">
-                        <h1 class="hero__title">Guy Moorhouse is an independent designer</h1>
-                        <div class="hero__images">
-                            <a href="#!" class="img-container hero__img--far-right">
-                                <img src="https://www.futurefabric.co/_astro/malika-thumb.ZuOuGDAx_1P9HoF.webp" alt="Malika Favre project image">
+                        <header class="navbar">
+                            <!--In the original site, SVGs are directly embedded. I've converted them to images here so as to avoid copying and pasting the code into my project-->
+                            <img src="../images/gm-signature.svg" class="navbar__logo">
+                            <nav class="main-nav">
+                                <ul>
+                                    <li class="main-nav__item main-nav__item--active"><a href="#!">Projects</a></li>
+                                    <li class="main-nav__item"><a href="#!">About</a></li>
+                                    <li class="main-nav__item"><a href="#!">Blog</a></li>
+                                    <li class="main-nav__item"><a href="#!">Contact</a></li>
+                                    <li class="main-nav__item"><a href="#!">Now</a></li>
+                                </ul>
+                            </nav>
+                        </header>
+                    </div>
+                </div>
+            </article>
+
+            <h2 id="hero">Hero Section</h2>
+            <article class="component">
+                <h3 class="component__name">.hero</h3>
+                <div class="component__img">
+                    <img src="img/hero.png" alt="The hero section">
+                </div>
+                <div class="component__code">
+                    <section class="hero">
+                        <div class="content-wrapper">
+                            <h1 class="hero__title">Guy Moorhouse is an independent designer</h1>
+                            <div class="hero__images">
+                                <a href="#!" class="img-container hero__img--far-right">
+                                    <img src="https://www.futurefabric.co/_astro/malika-thumb.ZuOuGDAx_1P9HoF.webp" alt="Malika Favre project image">
+                                </a>
+                                <a href="#!" class="img-container hero__img--left">
+                                    <img src="../images/videoframe_4724--SuperHi.png" alt="SuperHi Project Image">
+                                    <!--The videos on the site are embedded in such a way that I am unable to link them into my project. I've been able to save a frame from each video for this project-->
+                                </a>
+                                <a href="#!" class="img-container hero__img--middle">
+                                    <img src="https://www.futurefabric.co/_astro/adept-top-03.aE1KpdpV_Z243Gtq.webp" alt="Adpet project image">
+                                </a>
+                                <a href="#!" class="img-container hero__img--right">
+                                    <img src="../images/videoframe_1907--Loopers.png" alt="Loopers project image">
+                                </a>
+                            </div>
+                        </div>  
+                    </section>  
+                </div>
+            </article>
+
+
+            <h2 id="contracts">Recent Contracts</h2>
+            <article class="component">
+                <h3 class="component__name">.contracts</h3>
+                <div class="component__img">
+                    <img src="img/contracts.png">
+                </div>
+                <div class="component__code">
+                    <div class="content-wrapper">
+                        <table class="contracts__table">
+                            <caption class="contracts__caption">
+                                Recent Contracts
+                            </caption>
+                            <tr>
+                                <td><a href="#!" class="contracts__link--adept">Adept</a></td>
+                                <td>Branding, design and front-end build <p class="info-highlight">Ongoing</p></td>
+                                <td class="contracts__dates">2023&ndash;2024</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#!" class="contracts__link--google">Google Arts &amp; Culture</a></td>
+                                <td>Design direction and prototyping</td>
+                                <td class="contracts__dates">2023</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#!" class="contracts__link--fable">Fable <sup>&#8599;</sup></a></td>
+                                <td>Design and prototyping</td>
+                                <td class="contracts__dates">2022&ndash;2023</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </article>
+
+            <h2 id="projects">Selected Projects</h2>
+            <article class="component">
+                <h3 class="compontent__name">.portfolio (first row only)</h3>
+                <div class="component__img">
+                    <img src="img/portfolio.png" alt="the first row of the portfolio section">
+                </div>
+                <div class="component__code">
+                    <div class="content-wrapper">
+                        <h2>Selected projects</h2>
+                        <p>2008-2024</p>
+                        <div class="portfolio__grid">
+                            <a href="#!" class="project">
+                                <div class="img-container img-container--grid">
+                                    <img src="https://www.futurefabric.co/_astro/virgin-thumb.u7OhDyeX_vBVBF.webp" alt="Virgin Atlantic project image">
+                                </div>
+                                <h3>Virgin Atlantic</h3>
+                                <p>In-flight entertainment system</p>
                             </a>
-                            <a href="#!" class="img-container hero__img--left">
-                                <img src="../images/videoframe_4724--SuperHi.png" alt="SuperHi Project Image">
-                                <!--The videos on the site are embedded in such a way that I am unable to link them into my project. I've been able to save a frame from each video for this project-->
+                            <a href="#!" class="project">
+                                <div class="img-container img-container--grid img-container--blue">
+                                    <img src="https://www.futurefabric.co/_astro/govuk.0S3qSJgE_Z1qkB71.webp" alt="Gov.uk project image">
+                                </div>
+                                <h3>GOV.UK</h3>
+                                <p>Single domain for the UK population</p>
                             </a>
-                            <a href="#!" class="img-container hero__img--middle">
-                                <img src="https://www.futurefabric.co/_astro/adept-top-03.aE1KpdpV_Z243Gtq.webp" alt="Adpet project image">
-                            </a>
-                            <a href="#!" class="img-container hero__img--right">
-                                <img src="../images/videoframe_1907--Loopers.png" alt="Loopers project image">
+                            <a href="#!" class="project">
+                                <div class="img-container img-container--grid img-container--purple">
+                                    <img src="https://www.futurefabric.co/_astro/animade-thumb-02.aVeSo_rM_Z1zM0wH.webp" alt="Animade project image">
+                                </div>
+                                <h3>Animade</h3>
+                                <p>Animation studio design direction</p>
                             </a>
                         </div>
-                    </div>  
-                </section>  
-            </div>
-        </article>
-
-
-        <h2>Recent Contracts</h2>
-        <article class="component">
-            <h3 class="component__name">.contracts</h3>
-            <div class="component__img">
-                <img src="img/contracts.png">
-            </div>
-            <div class="component__code">
-                <div class="content-wrapper">
-                    <table class="contracts__table">
-                        <caption class="contracts__caption">
-                            Recent Contracts
-                        </caption>
-                        <tr>
-                            <td><a href="#!" class="contracts__link--adept">Adept</a></td>
-                            <td>Branding, design and front-end build <p class="info-highlight">Ongoing</p></td>
-                            <td class="contracts__dates">2023&ndash;2024</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#!" class="contracts__link--google">Google Arts &amp; Culture</a></td>
-                            <td>Design direction and prototyping</td>
-                            <td class="contracts__dates">2023</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#!" class="contracts__link--fable">Fable <sup>&#8599;</sup></a></td>
-                            <td>Design and prototyping</td>
-                            <td class="contracts__dates">2022&ndash;2023</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </article>
-
-        <h2>Selected Projects</h2>
-        <article class="component">
-            <h3 class="compontent__name">.portfolio (first row only)</h3>
-            <div class="component__img">
-                <img src="img/portfolio.png" alt="the first row of the portfolio section">
-            </div>
-            <div class="component__code">
-                <div class="content-wrapper">
-                    <h2>Selected projects</h2>
-                    <p>2008-2024</p>
-                    <div class="portfolio__grid">
-                        <a href="#!" class="project">
-                            <div class="img-container img-container--grid">
-                                <img src="https://www.futurefabric.co/_astro/virgin-thumb.u7OhDyeX_vBVBF.webp" alt="Virgin Atlantic project image">
-                            </div>
-                            <h3>Virgin Atlantic</h3>
-                            <p>In-flight entertainment system</p>
-                        </a>
-                        <a href="#!" class="project">
-                            <div class="img-container img-container--grid img-container--blue">
-                                <img src="https://www.futurefabric.co/_astro/govuk.0S3qSJgE_Z1qkB71.webp" alt="Gov.uk project image">
-                            </div>
-                            <h3>GOV.UK</h3>
-                            <p>Single domain for the UK population</p>
-                        </a>
-                        <a href="#!" class="project">
-                            <div class="img-container img-container--grid img-container--purple">
-                                <img src="https://www.futurefabric.co/_astro/animade-thumb-02.aVeSo_rM_Z1zM0wH.webp" alt="Animade project image">
-                            </div>
-                            <h3>Animade</h3>
-                            <p>Animation studio design direction</p>
-                        </a>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        <h2>Info Block</h2>
-        <article class="component">
-            <h3 class="component__name">.infoblock</h3>
-            <div class="component__img">
-                <img src="img/infoblock.png" alt="An information block">
-            </div>
-            <div class="component__code infoblock">
-                <p>What I do</p>
-                <h2>Design, branding, prototyping and build</h2>
-                <p>For the web and related technologies</p>
-                <a href="#!" class="button">About my studio</a>
-            </div>
-        </article>
-
-        <h2>Footer</h2>
-        <article class="component">
-            <h3 class="component__name">.footer</h3>
-            <div class="component__img">
-                <img src="img/footer.png" alt="The footer">
-            </div>
-            <div class="component__code">
-                <div class="content-wrapper">
-                    <div class="infoblock">
-                        <p>Get in touch</p>
-                        <h2>hey@futurefabric.co</h2>
-                        <a href="#!" class="button">Copy email address &nbsp;<i class="fa-regular fa-clone"></i></a>
-                        <p>
-                            <i class="fa-brands fa-threads"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-mastodon"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                        </p>
-                        <p class="footer__copy">
-                            &copy; Futurefabric Ltd. and clients, 2008&ndash;2024<br>
-                            Registered in the UK and Wales. Company 06759081. VAT 326240627.<br>
-                            Website hand coded with <a href="#!" class="footer__link">Astro</a>.
-                        </p>
-                        <p class="footer__copy">
-                            <a href="#!" class="footer__link footer__link--link-row link-hover--peach">Newsletter</a> 
-                            <a href="#!" class="footer__link footer__link--link-row link-hover--green">Company values</a> 
-                            <a href="#!" class="footer__link footer__link--link-row link-hover--pink">Legal statements</a> 
-                            <a href="#!" class="footer__link footer__link--link-row link-hover--yellow">RSS Feed</a>
-                        </p>
-                    </div>
-                    <!--End footer infoblock-->
-                    <img src="../images/blue-mascot-logo.svg" class="footer__img" alt="Blue mascot logo">
+            <h2 id="infoblock">Info Block</h2>
+            <article class="component">
+                <h3 class="component__name">.infoblock</h3>
+                <div class="component__img">
+                    <img src="img/infoblock.png" alt="An information block">
                 </div>
-            </div>
-        </article>
+                <div class="component__code infoblock">
+                    <p>What I do</p>
+                    <h2>Design, branding, prototyping and build</h2>
+                    <p>For the web and related technologies</p>
+                    <a href="#!" class="button">About my studio</a>
+                </div>
+            </article>
+
+            <h2 id="footer">Footer</h2>
+            <article class="component">
+                <h3 class="component__name">.footer</h3>
+                <div class="component__img">
+                    <img src="img/footer.png" alt="The footer">
+                </div>
+                <div class="component__code">
+                    <div class="content-wrapper">
+                        <div class="infoblock">
+                            <p>Get in touch</p>
+                            <h2>hey@futurefabric.co</h2>
+                            <a href="#!" class="button">Copy email address &nbsp;<i class="fa-regular fa-clone"></i></a>
+                            <p>
+                                <i class="fa-brands fa-threads"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-mastodon"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </p>
+                            <p class="footer__copy">
+                                &copy; Futurefabric Ltd. and clients, 2008&ndash;2024<br>
+                                Registered in the UK and Wales. Company 06759081. VAT 326240627.<br>
+                                Website hand coded with <a href="#!" class="footer__link">Astro</a>.
+                            </p>
+                            <p class="footer__copy">
+                                <a href="#!" class="footer__link footer__link--link-row link-hover--peach">Newsletter</a> 
+                                <a href="#!" class="footer__link footer__link--link-row link-hover--green">Company values</a> 
+                                <a href="#!" class="footer__link footer__link--link-row link-hover--pink">Legal statements</a> 
+                                <a href="#!" class="footer__link footer__link--link-row link-hover--yellow">RSS Feed</a>
+                            </p>
+                        </div>
+                        <!--End footer infoblock-->
+                        <img src="../images/blue-mascot-logo.svg" class="footer__img" alt="Blue mascot logo">
+                    </div>
+                </div>
+            </article>
+        </main>
     </body>
 </html>
