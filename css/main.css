@@ -172,6 +172,12 @@ a.footer__link {
 .img-container--purple {
     background-color: var(--dark-purple);
 }
+.img-container--white {
+    background-color: var(--white);
+}
+.img-container--yellow {
+    background-color: var(--yellow);
+}
 
 .img-container img {
     max-width: 100%;
@@ -369,8 +375,13 @@ a.availability-floater {
 /*Selected projects*/
 .portfolio__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
+}
+@media screen and (max-width: 980px){
+    .portfolio__grid {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    }
 }
 .img-container--grid {
     max-width: 100%;
