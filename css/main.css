@@ -1,0 +1,387 @@
+:root {
+    --font-sans-serif: "Poppins", sans-serif;
+    --white: #fff;
+    --off-white: #cecec9;
+    --light-grey: #8b8b8b;
+    --grey: #383838;
+    --dark-grey: #232323;
+    --black: #1a1a1a;
+    --blue: #407adf;
+    --light-blue: #07d1ff;
+    --purple: #8c6af6;
+    --dark-purple: #6966A9;
+    --pink: #f199a4;
+    --yellow: #f6c858;
+    --peach: #f2a996;
+    --green: #4faf84;
+}
+
+/*Border box code from https://www.paulirish.com/2012/box-sizing-border-box-ftw/*/
+/* Smooth scrolling learned from https://www.w3schools.com/howto/howto_css_smooth_scroll.asp */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font-sans-serif);
+    color: var(--off-white);
+    background: var(--dark-grey);
+    line-height: 1.667em;
+    font-size: large;
+    position: relative;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+/*Wrapper*/
+.content-wrapper {
+    max-width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+/***********
+Components
+**********/
+.component img {
+    display: block;
+    margin: 5px;
+}
+.component__img {
+    overflow-x: auto;
+}
+.component__code {
+    background-color: var(--dark-grey);
+    color: var(--off-white);
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+.footer__copy {
+    color: var(--light-grey);
+    font-size: 0.9em;
+    margin: 40px 0;
+}
+
+.footer__img {
+    position: absolute;
+    width: 64px;
+    right: 0;
+    bottom: 0;
+}
+/*headers*/
+h2 {
+    margin: 15px 0;
+    font-weight: 300;
+    font-size: 3rem;
+    color: var(--white)
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 2.1rem;
+    color: var(--white);
+}
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.1em;
+}
+.infoblock h2 {
+    font-size: 4.2rem;
+    font-weight: 300;
+    line-height: 1.1em;
+    color: var(--white);
+}
+.infoblock__title, .hero__title {
+    max-width: 800px;
+}
+
+/*Other text*/
+.info-highlight {
+    display: inline;
+    font-size: 1rem;
+    color: var(--off-white);
+    padding: 10px 15px 5px;
+    background-color: var(--grey);
+    border-radius: 50px;
+}
+
+/*Buttons and Links*/
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.9em;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 5px 15px 2px;
+}
+.button:hover {
+    background-color: var(--white);
+    color: var(--dark-grey)
+}
+
+a.footer__link {
+    text-decoration: underline;
+    color: var(--light-grey);
+}
+.footer__link--link-row {
+    padding-right: 10px;
+}
+
+.footer__link:hover {
+    color: var(--white);
+}
+
+.link-hover--peach:hover {
+    color: var(--peach);
+}
+
+.main-nav__item a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 15px 5px;
+    border-radius: 50px;
+}
+.main-nav__item--active a, .main-nav__item a:hover {
+    background-color: var(--grey);
+}
+
+/*image and Video*/
+.img-container {
+    display: inline-block;
+    max-width: 554px;
+    max-height: 554px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.img-container--blue {
+    background-color: var(--blue);
+}
+.img-container--purple {
+    background-color: var(--dark-purple);
+}
+
+.img-container img {
+    max-width: 100%;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+/*icons*/
+i.fa-brands {
+    font-size: 1.5em;
+    padding: 10px;
+    color: var(--white);
+    transition: 0.2s;
+}
+.fa-brands:hover {
+    transform: scale(1.08);
+}
+
+/*hover colors*/
+.fa-threads:hover {
+    color: var(--purple);
+}
+.link-hover--peach:hover, .fa-instagram:hover {
+    color: var(--peach);
+}
+.link-hover--yellow:hover, .fa-mastodon:hover {
+    color: var(--yellow);
+}
+.fa-linkedin:hover {
+    color: var(--light-blue);
+}
+.link-hover--green:hover {
+    color: var(--green);
+}
+.link-hover--pink:hover {
+    color: var(--pink);
+}
+
+/********************
+Molecules & Organisms
+*********************/
+
+/*Availability Floater*/
+.availability-floater{
+    background-color: var(--white);
+    border-radius: 100px;
+    margin: 20px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 3px 3px 16px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+}
+/*The shadow obviously doesn't show up against the dark background here, but I wanted to include it so I'd have it ready for the actual page when this has a fixed position*/
+
+.availability-floater:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.availability-floater p {
+    margin: 0;
+    padding-top: 8px;
+    color: var(--black);
+}
+a.availability-floater {
+    text-decoration: none;
+}
+.availability-floater img {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--off-white);
+    border-radius: 100px;
+    margin: 0;
+}
+
+@keyframes blink {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.availability-floater__light {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: var(--green);
+    animation: blink 1s ease-in-out infinite;
+}
+
+/*Navbar*/
+.top-bar {
+    background: var(--dark-grey);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__logo {
+    max-width: 100px;
+    height: 100%;
+}
+
+.main-nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+/*Hero*/
+.hero {
+    background-image: linear-gradient(var(--dark-grey), var(--black));
+    overflow: hidden;
+}
+.hero__images{
+    min-height: 800px;
+}
+
+.hero__img--left {
+    width: 33%;
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+}
+.hero__img--middle {
+    width: 33%;
+    position: absolute;
+    bottom: 100px;
+    left: 30%;
+}
+.hero__img--right {
+    width: 33%;
+    position: absolute;
+    bottom: 0;
+    left: 66%;
+    z-index: 1;
+}
+.hero__img--far-right {
+    width: 33%;
+    position: absolute;
+    right: -100px;
+    bottom: 35%;
+}
+
+/*Recent Contracts*/
+
+.contracts__table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--white);
+}
+
+.contracts__caption {
+    text-align: left;
+    color: var(--off-white);
+}
+
+.contracts__table tr {
+    border-bottom: 1px solid var(--grey);
+}
+
+.contracts__table tr:last-of-type {
+    border-bottom: none;
+}
+
+.contracts__table td {
+    font-size: 1.2em;
+    padding: 0.8em 0;
+}
+
+.contracts__table a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contracts__link--adept:hover {
+    color: var(--peach);
+}
+
+.contracts__link--google:hover {
+    color: var(--light-blue);
+}
+
+.contracts__link--fable:hover {
+    color: var(--yellow);
+}
+
+.contracts__dates {
+    color: var(--off-white);
+    text-align: right;
+}
+
+/*Selected projects*/
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    grid-gap: 40px;
+}
+.img-container--grid {
+    max-width: 100%;
+}
+.project h3 {
+    margin: 15px 0 10px;
+}
+.project p {
+    margin: 0;
+}
+.project {
+    margin-bottom: 40px;
+}
+
+/*Footer*/
+footer {
+    background: var(--black);
+}

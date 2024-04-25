@@ -4,8 +4,137 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | Guy Moorhouse Case Study</title>
+        <link rel="stylesheet" href="https://use.typekit.net/fyo8wqg.css">
+        <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <h1>Home Page goes here</h1>
+        <header class="top-bar">
+            <div class="content-wrapper">
+                <div class="navbar">
+                    <!--In the original site, SVGs are directly embedded. I've converted them to images here so as to avoid copying and pasting the code into my project-->
+                    <img src="images/gm-signature.svg" alt="Guy Moorhouse's signature logo" class="navbar__logo">
+                    <nav class="main-nav">
+                        <ul>
+                            <li class="main-nav__item main-nav__item--active"><a href="#!">Projects</a></li>
+                            <li class="main-nav__item"><a href="#!">About</a></li>
+                            <li class="main-nav__item"><a href="#!">Blog</a></li>
+                            <li class="main-nav__item"><a href="#!">Contact</a></li>
+                            <li class="main-nav__item"><a href="#!">Now</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="content-wrapper">
+                <h1 class="hero__title">Guy Moorhouse is an independent designer</h1>
+                <div class="hero__images">
+                    <a href="#!" class="img-container hero__img--far-right">
+                        <img src="https://www.futurefabric.co/_astro/malika-thumb.ZuOuGDAx_1P9HoF.webp" alt="Malika Favre project image">
+                    </a>
+                    <a href="#!" class="img-container hero__img--left">
+                        <img src="images/videoframe_4724--SuperHi.png" alt="SuperHi Project Image">
+                        <!--The videos on the site are embedded in such a way that I am unable to link them into my project. I've been able to save a frame from each video for this project-->
+                    </a>
+                    <a href="#!" class="img-container hero__img--middle">
+                        <img src="https://www.futurefabric.co/_astro/adept-top-03.aE1KpdpV_Z243Gtq.webp" alt="Adpet project image">
+                    </a>
+                    <a href="#!" class="img-container hero__img--right">
+                        <img src="images/videoframe_1907--Loopers.png" alt="Loopers project image">
+                    </a>
+                </div>
+            </div>  
+        </section>
+        <section class="contracts">
+            <div class="content-wrapper">
+                <table class="contracts__table">
+                    <caption class="contracts__caption">
+                        Recent Contracts
+                    </caption>
+                    <tr>
+                        <td><a href="#!" class="contracts__link--adept">Adept</a></td>
+                        <td>Branding, design and front-end build <p class="info-highlight">Ongoing</p></td>
+                        <td class="contracts__dates">2023&ndash;2024</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#!" class="contracts__link--google">Google Arts &amp; Culture</a></td>
+                        <td>Design direction and prototyping</td>
+                        <td class="contracts__dates">2023</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#!" class="contracts__link--fable">Fable <sup>&#8599;</sup></a></td>
+                        <td>Design and prototyping</td>
+                        <td class="contracts__dates">2022&ndash;2023</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="content-wrapper">
+                <h2>Selected projects</h2>
+                <p>2008-2024</p>
+                <div class="portfolio__grid">
+                    <a href="#!" class="project">
+                        <div class="img-container img-container--grid">
+                            <img src="https://www.futurefabric.co/_astro/virgin-thumb.u7OhDyeX_vBVBF.webp" alt="Virgin Atlantic project image">
+                        </div>
+                        <h3>Virgin Atlantic</h3>
+                        <p>In-flight entertainment system</p>
+                    </a>
+                    <a href="#!" class="project">
+                        <div class="img-container img-container--grid img-container--blue">
+                            <img src="https://www.futurefabric.co/_astro/govuk.0S3qSJgE_Z1qkB71.webp" alt="Gov.uk project image">
+                        </div>
+                        <h3>GOV.UK</h3>
+                        <p>Single domain for the UK population</p>
+                    </a>
+                    <a href="#!" class="project">
+                        <div class="img-container img-container--grid img-container--purple">
+                            <img src="https://www.futurefabric.co/_astro/animade-thumb-02.aVeSo_rM_Z1zM0wH.webp" alt="Animade project image">
+                        </div>
+                        <h3>Animade</h3>
+                        <p>Animation studio design direction</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="infoblock">
+            <div class="content-wrapper">
+                <p>What I do</p>
+                <h2 class="infoblock__title">Design, branding, prototyping and build</h2>
+                <p>For the web and related technologies</p>
+                <a href="#!" class="button">About my studio</a>
+            </div>
+        </section>
+        <footer>
+            <div class="content-wrapper">
+                <div class="infoblock">
+                    <p>Get in touch</p>
+                    <h2>hey@futurefabric.co</h2>
+                    <a href="#!" class="button">Copy email address &nbsp;<i class="fa-regular fa-clone"></i></a>
+                    <p>
+                        <i class="fa-brands fa-threads"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-mastodon"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </p>
+                    <p class="footer__copy">
+                        &copy; Futurefabric Ltd. and clients, 2008&ndash;2024<br>
+                        Registered in the UK and Wales. Company 06759081. VAT 326240627.<br>
+                        Website hand coded with <a href="#!" class="footer__link">Astro</a>.
+                    </p>
+                    <p class="footer__copy">
+                        <a href="#!" class="footer__link footer__link--link-row link-hover--peach">Newsletter</a> 
+                        <a href="#!" class="footer__link footer__link--link-row link-hover--green">Company values</a> 
+                        <a href="#!" class="footer__link footer__link--link-row link-hover--pink">Legal statements</a> 
+                        <a href="#!" class="footer__link footer__link--link-row link-hover--yellow">RSS Feed</a>
+                    </p>
+                </div>
+                <!--End footer infoblock-->
+                <img src="../images/blue-mascot-logo.svg" class="footer__img" alt="Blue mascot logo">
+            </div>
+        </footer>
     </body>
 </html>
