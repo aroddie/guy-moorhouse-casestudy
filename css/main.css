@@ -160,6 +160,7 @@ a.footer__link {
 /*image and Video*/
 .img-container {
     display: inline-block;
+    aspect-ratio: 1/1;
     max-width: 554px;
     max-height: 554px;
     border-radius: 5px;
@@ -218,6 +219,10 @@ Molecules & Organisms
 
 /*Availability Floater*/
 .availability-floater{
+    position: fixed;
+    bottom: 50px;
+    right: 5%;
+    z-index: 2;
     background-color: var(--white);
     border-radius: 100px;
     margin: 20px;
