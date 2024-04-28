@@ -278,9 +278,11 @@ a.availability-floater {
     justify-content: space-between;
 }
 .navbar__logo {
+    align-self: center;
+}
+.navbar__logo img {
     max-width: 100px;
     height: 100%;
-    align-self: center;
 }
 
 .main-nav ul{
@@ -377,11 +379,7 @@ a.availability-floater {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 }
-@media screen and (max-width: 980px){
-    .portfolio__grid {
-        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
-    }
-}
+
 .img-container--grid {
     max-width: 100%;
 }
@@ -411,4 +409,60 @@ footer {
 }
 .footer__animation img {
     max-width: 100%;
+}
+
+/****************
+Media Queries
+***************/
+@media screen and (max-width: 1023px){
+    .content-wrapper {
+        max-width: 97%;
+    }
+    /*hero*/
+    .hero__images {
+        min-height: 1200px;
+    }
+    .hero__img--far-right {
+        width: 48%;
+        right: -5%;
+    } 
+    .hero__img--left {
+        width: 48%;
+        left: 0;
+        top: 30%;
+    }
+    .hero__img--middle {
+        width: 48%;
+        left: -50px;
+        top: 65%;
+    }
+    .hero__img--right {
+        width: 48%;
+        left: 55%;
+    }
+
+    /*Contracts*/
+    .contracts__table td:nth-of-type(2) {
+        display: none;
+    }
+    
+    /*Portfolio*/
+    .portfolio__grid {
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+        grid-gap: 10px;
+    }
+    .project p{
+        visibility: hidden;
+    }
+
+    /*footer animation*/
+    .footer__animation--placeholder {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer__animation, .footer__animation--placeholder, .availability-floater {
+        visibility: hidden;
+    }
 }
