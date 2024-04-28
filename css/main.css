@@ -304,12 +304,14 @@ a.availability-floater {
     position: absolute;
     left: -120px;
     bottom: 0;
+    animation: float 9s ease-in-out infinite alternate;
 }
 .hero__img--middle {
     width: 35%;
     position: absolute;
     bottom: 100px;
     left: 30%;
+    animation: float 7s ease-in-out 4s infinite alternate;
 }
 .hero__img--right {
     width: 35%;
@@ -317,14 +319,20 @@ a.availability-floater {
     bottom: 0;
     left: 68%;
     z-index: 1;
+    animation: float 8s ease-in-out 2s infinite alternate;
 }
 .hero__img--far-right {
     width: 35%;
     position: absolute;
     right: -140px;
     bottom: 35%;
+    animation: float 7s ease-in-out infinite alternate;
 }
 
+@keyframes float {
+    from {transform: translate(0, 0);}
+    to {transform: translate(0, -20px);}
+}
 /*Recent Contracts*/
 
 .contracts__table {
